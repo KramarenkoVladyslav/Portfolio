@@ -1,0 +1,116 @@
+.contacts{
+	padding-top: 120px;
+	padding-bottom: 100px;
+	&__wrapper {
+		display: grid;
+		grid-template-columns: 400px 585px;
+		justify-content: space-between;
+        padding: 0 35px 0 52px;
+    }
+    &__photo {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+	&__descr {
+        padding-top: 6px;
+        .divider {
+            margin-top: 5px;
+            margin-left: 0;
+        }
+    }
+    &__title {
+        position: relative;
+        padding: 1px 0 0 12px;
+        @include before_circle;
+    }
+	&__text, &__social{
+		margin-top: 20px;
+	}
+	&__link{
+		margin-right: 15px;
+		&:hover{
+			svg path{
+				fill: $main-color;
+				transition: 0.3s ease-in-out;
+				display: block;
+			}
+		}
+	}
+	&__form{
+		margin-top: 30px;
+		display: grid;
+		grid-template-rows: 45px 190px 45px;
+		grid-template-columns: repeat(2, 280px);
+		justify-content: space-between;
+		row-gap: 30px;
+		label{
+			position: absolute;
+			display: block;
+			top: -10px;
+			left: 12px;
+			height: 18px;
+			padding: 0 8px;
+			font-size: 12px;
+			background-color: $background-color;
+		}
+	}
+	&__triggers{
+		display: grid;
+		grid-template-columns: repeat(2, auto);
+		column-gap: 35px;
+		grid-column: 1 / 3;
+	}
+	&__policy{
+		display: flex;
+		align-items: center;
+		a{
+			color: $main-color;
+		}
+		input[type='checkbox'] {
+			margin-right: 10px;
+			accent-color: $main-color;
+		}
+	}
+	&__input{
+		position: relative;
+		input{
+			display: block;
+			height: 100%;
+			width: 100%;
+			padding: 0 20px;
+			font-weight: 500;
+			font-size: 12px;
+			line-height: 18px;
+			border: 1px solid $text-color;
+			background-color: $background-color;
+			color: $text-color;
+		}
+	}
+	&__textarea{
+		position: relative;
+		grid-column: 1 / 3;
+		textarea{
+			display: block;
+			width: 100%;
+			height: 100%;
+			padding: 20px;
+			font-weight: 500;
+			font-size: 12px;
+			line-height: 18px;
+			resize: none;
+			border: 1px solid $text-color;
+			background-color: $background-color;
+			color: $text-color;
+		}
+	}
+	&__btn{
+		width: 221px;
+		font-weight: 700;
+		font-size: 14px;
+		color: $text-color;
+		border: 0;
+	}
+}

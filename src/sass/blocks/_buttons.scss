@@ -1,0 +1,9 @@
+.btn{
+	background: $main-color;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	transition: 0.2s ease-out;
+	&:hover{
+		background: none;
+		border: 1px solid $main-color;
+	}
+}

@@ -1,0 +1,40 @@
+.sidepanel{
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	top: 230px;
+	left: 50px;
+	width: 20px;
+	height: 340px;
+	z-index: 3;
+	animation-delay: 1.3s;
+	&__link{
+		&:hover{
+			svg{
+				width: 22px;
+				height: 22px;
+			}
+			svg path{
+				fill: $main-color;
+				transition: 0.3s ease-in-out;
+				display: block;
+			}
+		}
+	}
+	&__divider{
+		height: 70px;
+		width: 2px;
+		background-color: $text-color;
+	}
+	&__text{
+		height: 107px;
+		width: 24px;
+		span{
+			display: block;
+			width: 107px;
+			transform: rotate(-90deg) translate(-40%, -183%);
+		}
+	}
+}
